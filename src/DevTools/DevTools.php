@@ -50,7 +50,8 @@ class DevTools extends PluginBase implements CommandExecutor{
 
 	}
 
-	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) :{
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args)
+	{
 		switch($command->getName()){
 			case "makeplugin":
 				if(isset($args[0]) and $args[0] === "FolderPluginLoader"){
